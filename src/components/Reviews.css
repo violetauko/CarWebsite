@@ -1,0 +1,59 @@
+.r-container{
+    margin-top: 3rem;
+}
+.r-container h2 {
+    color: #44C5D9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+.r-container h1 {
+    color: #010824;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.r-cards {
+    display: flex;
+    justify-content: space-evenly;
+    height: 65vh;
+    margin-top: 3rem;
+}
+
+.r-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 30%;
+    border-radius: 0.5rem;
+}
+
+.r-card p {
+    padding: 0 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #010824;
+}
+
+#im-icon {
+    padding-top: 1rem;
+    color: #44C5D9;
+}
+
+.ri-icons {
+    display: flex;
+    justify-content: center;
+    color: #44C5D9;
+}
+
+.photo {
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+}
+
+.photo img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    border: solid #010824;
+}

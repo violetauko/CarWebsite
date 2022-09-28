@@ -1,0 +1,30 @@
+.navbar{
+    padding-top: 2rem;
+    background-color: #010824;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-logo h1{
+    text-align: start;
+    color: #44C5D9;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    
+}
+.navbar-logo h1 .span{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:white;
+    margin-right: 4rem;
+    background-color: #010824;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar a:hover{
+    color:#44C5D9;
+}

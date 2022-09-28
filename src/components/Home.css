@@ -1,0 +1,46 @@
+.home{
+    background-color: #010824;
+}
+.home-contents{
+    width: 100%;
+    display: flex;
+    background-color: #010824;
+}
+.home-contents-left{
+    width: 50%;
+    text-align: start;
+    margin-left: 3rem;
+    color: white;
+}
+.home-contents-left h1{
+font-size: 2rem;
+font-family: 'Poppins', sans-serif;
+}
+.home-contents-left p{
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    line-height: 28px;
+}
+
+.home-contents-right img{
+  display: block;
+  max-width: 100%;
+  max-height: 350px;
+}
+#img1{
+    position: relative;
+    z-index: 1;
+    width:80%;
+    border-radius:10px;
+}
+#img2 {
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    right: -190px;
+    width:60%;
+    border-radius:10px;
+  }
+ 
+
+

@@ -1,0 +1,12 @@
+.mission{
+    font-family: 'Poppins', sans-serif;
+    color: #010824;
+    padding: 3rem 10rem;
+    height: 50vh;
+}
+.mission p{
+  font-size: 1.4rem;
+}
+.mission h1{
+    font-size: 2.5rem;
+}
