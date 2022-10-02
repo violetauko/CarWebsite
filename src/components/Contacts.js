@@ -10,7 +10,7 @@ const Contacts = () => {
     e.preventDefault();
   }
   return (
-    <div>
+    <section id='contacts'>
       <div className='c-container'>
         <h1>Contact Us</h1>
         <h4>We'd love to hear from you</h4>
@@ -49,7 +49,7 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
