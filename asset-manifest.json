@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c926b6fb.css",
+    "main.js": "/static/js/main.15c90b07.js",
+    "static/media/pic2.png": "/static/media/pic2.e0638372b7d260789f0f.png",
+    "static/media/range.png": "/static/media/range.b757b39fb4bf0e86f568.png",
+    "static/media/pic3.png": "/static/media/pic3.c85776fcea55e109d473.png",
+    "static/media/toyota2.png": "/static/media/toyota2.e4daa808d72b92fc08dc.png",
+    "static/media/pic5.png": "/static/media/pic5.77dd67d5c856cbfd0847.png",
+    "static/media/pic1.png": "/static/media/pic1.893ffeefbfd9ac84a5c4.png",
+    "static/media/car11.jpeg": "/static/media/car11.b4d8cdce156a7dd3703d.jpeg",
+    "static/media/toyota1.jpeg": "/static/media/toyota1.ff57aceb615e8e6a1e53.jpeg",
+    "static/media/bmw.jpeg": "/static/media/bmw.3c9a812ace99b75e8e4c.jpeg",
+    "static/media/jeep1.jpeg": "/static/media/jeep1.bd52b274555f8ba4495c.jpeg",
+    "static/media/subaru.jpeg": "/static/media/subaru.daba59c53c2ae400c8d7.jpeg",
+    "static/media/range1.jpeg": "/static/media/range1.d4ed026f1348cf75c717.jpeg",
+    "static/media/mercedes2.jpeg": "/static/media/mercedes2.1540a7968816d114d8a0.jpeg",
+    "static/media/mercedes1.jpeg": "/static/media/mercedes1.c115288f88e6d54abecd.jpeg",
+    "static/media/audi.jpeg": "/static/media/audi.e6bfa535a3913c456920.jpeg",
+    "static/media/car6.avif": "/static/media/car6.b5423f91646b02653fef.avif",
+    "static/media/car4.jpeg": "/static/media/car4.affbb7ef1072bd02d1d7.jpeg",
+    "static/media/photo2.jpeg": "/static/media/photo2.62416e43602ec3a6b987.jpeg",
+    "static/media/photo1.webp": "/static/media/photo1.2b5e14701c4f56ce3e6f.webp",
+    "static/media/photo3.webp": "/static/media/photo3.6eebbfa6566dbada6a4f.webp",
+    "index.html": "/index.html",
+    "main.c926b6fb.css.map": "/static/css/main.c926b6fb.css.map",
+    "main.15c90b07.js.map": "/static/js/main.15c90b07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c926b6fb.css",
+    "static/js/main.15c90b07.js"
+  ]
+}
