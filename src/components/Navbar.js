@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className='navbar-logo'>
         <h1>BUY<span className='span'>From</span>DUBAI</h1>
       </div>
-      <div class="navbar-inner">
+      <div className="navbar-inner">
         {pathName!=='/'?<Link to="/#">Home</Link>:<a href="#">Home</a>}
         {pathName!=='/'?<Link to="/#about">About Us</Link>:<a href="#about">About Us</a>}
         {pathName!=='/'?<Link to="/#cars">Cars</Link>:<a href="#cars">Cars</a>}

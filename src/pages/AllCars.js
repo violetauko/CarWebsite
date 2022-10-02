@@ -16,13 +16,33 @@ import mercedes2 from '../images/mercedes2.jpeg'
 import range1 from '../images/range1.jpeg'
 import subaru from '../images/subaru.jpeg'
 import OurCollection from '../components/OurCollection'
+import { Link,Outlet,Route, Routes } from 'react-router-dom'
+import CarData from '../components/CarData'
 
 const AllCars = () => {
     var cars = [
-        { image: pic1, type: "MERCEDES-BENZ GLC43 AMG COUPE(JULY)2017 ", price: "2M" },
-        { image: range, type: "RANGE ROVER EVOQUE(March)", price: "2M" },
-        { image: pic2, type: "MERCEDES-BENZ", price: "2M" },
-        { image: pic3, type: "JEEP WRANGLER SPORT(JAN)2015", price: "3M" },
+        {
+            image: pic1,
+            type: "MERCEDES-BENZ GLC43 AMG COUPE(JULY)2017 ",
+            price: "2M",
+            description:
+                "Odometer - 52,315 miles,Fuel Economy - 27.0/34.0 mpg City/Hwy,Exterior Color - Alabaster Silver Metallic,Interior Color - Gray,Body - SUV, Seating - 5 seats,Transmission - Continuously Variable Automatic,Drivetrain - Front-wheel,Engine - 2.4L I-4 cylinder"
+        },
+        {
+            image: range,
+            type: "RANGE ROVER EVOQUE(March)",
+            price: "2M",
+            description:
+                "Odometer - 52,315 miles,Fuel Economy - 27.0/34.0 mpg City/Hwy,Exterior Color - Alabaster Silver Metallic,Interior Color - Gray,Body - SUV, Seating - 5 seats,Transmission - Continuously Variable Automatic,Drivetrain - Front-wheel,Engine - 2.4L I-4 cylinder"
+        },
+        {
+            image: pic2, type: "MERCEDES-BENZ", price: "2M", description:
+                "Odometer - 52,315 miles,Fuel Economy - 27.0/34.0 mpg City/Hwy,Exterior Color - Alabaster Silver Metallic,Interior Color - Gray,Body - SUV, Seating - 5 seats,Transmission - Continuously Variable Automatic,Drivetrain - Front-wheel,Engine - 2.4L I-4 cylinder"
+        },
+        {
+            image: pic3, type: "JEEP WRANGLER SPORT(JAN)2015", price: "3M", description:
+                "Odometer - 52,315 miles,Fuel Economy - 27.0/34.0 mpg City/Hwy,Exterior Color - Alabaster Silver Metallic,Interior Color - Gray,Body - SUV, Seating - 5 seats,Transmission - Continuously Variable Automatic,Drivetrain - Front-wheel,Engine - 2.4L I-4 cylinder"
+        },
         { image: audi, type: "AUDI", price: "2M" },
         { image: toyota2, type: "TOYOTA", price: "2M" },
         { image: bmw, type: "BMW", price: "2M" },
@@ -38,13 +58,25 @@ const AllCars = () => {
     return (
         <div className='al-container'>
             <h1>Our Cars</h1>
-            <div className='ls-inner-container'>
-                {cars.map((car, index) => <div key={index} className='ls-collection'>
-                    <OurCollection image={car['image']} name={car['type']} />
-                </div>)}
-            </div>
+            <div><Outlet/></div>
+            <Routes>
+            <Route index element={<AllCarsContainer cars={cars}/>}/>
+            <Route path={":id"} element={<CarData cars={cars}/>} />
+            </Routes>
         </div>
     )
 }
+const AllCarsContainer = ({cars}) => {
+  return (
+    <div className='ls-inner-container'>
+                {cars.map((car, index) =><div className='ls-collection' key={index}>
+                <Link to={`${index}`} >
+                    <OurCollection image={car['image']} name={car['type']} />
+                    </Link>
+                </div>)}
+            </div>
+  )
+}
+
 
 export default AllCars

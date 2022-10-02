@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
@@ -9,16 +9,21 @@ import LatestCollection from './components/LatestCollection';
 import OurMission from './components/OurMission';
 import Reviews from './components/Reviews';
 import AllCars from './pages/AllCars';
+import Contacts from './components/Contacts';
+import Details from './components/Details';
+import CarData from './components/CarData';
 
 function App() {
   return (
     <div className="App">
       <Router>
       <Navbar/>
-        <Switch>
-          <Route exact path="/" component={Landing}/>
-          <Route exact path="/allCars"  component={ AllCars}/>
-        </Switch>
+      <div><Outlet/></div>
+        <Routes>
+          <Route path="/" element={<Landing/>}/>
+          <Route path="/allCars/*"  element={ <AllCars/>}/>
+          
+        </Routes>
         <Footer />
       </Router>
 
@@ -33,6 +38,7 @@ const Landing = () => {
             <LatestCollection />
             <AboutUs />
             <Reviews />
+            <Contacts/>
             </div>
   )
 }

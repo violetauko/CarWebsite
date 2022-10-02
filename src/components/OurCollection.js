@@ -1,7 +1,7 @@
 import React from 'react'
 import './OurCollection.css'
 
-const OurCollection = ({ image, name }) => {
+const OurCollection = ({ image, name,description }) => {
     return (
         <div className='collection'>
             <div className='image'>
@@ -10,6 +10,7 @@ const OurCollection = ({ image, name }) => {
             <div>
                 <h6>{name}</h6>
             </div>
+            <p>{description}</p>
         </div>
 
     )

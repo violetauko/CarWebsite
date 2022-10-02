@@ -21,8 +21,8 @@ const Footer = () => {
         <div className='footer-links'>
         {pathName!=='/'?<Link to="/#about">About Us</Link>:<a href="#about">About Us</a>}
         {pathName!=='/'?<Link to="/#contacts">Contact Us</Link>:<a href="#contacts">Contact Us</a>}
-          <a href='#privacyPolicy'>Privacy & Policy</a>
-          <a href='#terms'>Terms & Conditions</a>
+        {pathName!=='/'?<Link to="/#reviews">Reviews</Link>:<a href="#reviews">Reviews</a>}
+        {pathName!=='/'?<Link to="/#cars">Cars</Link>:<a href="#cars">Cars</a>}
         </div>
       </div>
       <div className='footer-box'>

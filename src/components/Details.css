@@ -1,0 +1,17 @@
+.slide-container{
+    margin-top: 2rem;
+}
+.details{
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+.slide-container h1{
+    color: #44C5D9;
+    text-align: center;
+}
+.details h2{
+    text-align: start;
+    color: #44C5D9;
+}
